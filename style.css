@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('img/bg.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#score{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 55vw;
+}
+
+#board{
+    height: 90vh;
+    width: 40vw;
+    background-color: rgb(204, 245, 170);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    background:linear-gradient(red , yellow);
+    border-radius: 10px;
+    border: 2px solid rgb(231, 129, 13);
+}
+
+.snake{
+    background:linear-gradient(rgb(50, 224, 15) , yellow);
+border-radius: 20px;
+border: 2px solid rgb(9, 192, 18);
+}
+
+.food{
+    background:linear-gradient(rgb(194, 19, 238) , rgb(107, 33, 226));
+    border-radius: 20px;
+    border: 2px solid rgb(117, 17, 211);
+}
